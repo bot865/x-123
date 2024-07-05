@@ -4,11 +4,11 @@ const fs = require('fs')
 
 global.allmenu = (prefix, hituet) => {
 return`
-*MR.ROBOT WA ASSISTANT*
+*ELAKRAB ELYOTUBER*
 
 ╭––『 Owner Menu 』
-┆ *⋊* ${prefix}autoread 
-┆ *⋊* ${prefix}autobio 
+┆ *⋊* ${prefix}القراءة التلقائية 
+┆ *⋊* ${prefix}autobio  
 ┆ *⋊* ${prefix}autotype 
 ┆ *⋊* ${prefix}unavailable 
 ┆ *⋊* ${prefix}autorecord 
