@@ -40,13 +40,12 @@ __version__ = '2.1.4b1'
 
 
 class FakeShutdownEvent(object):
-    """Class to fake a threading.Event.isSet so that users of this module
-    are not required to register their own threading.Event()
+    """فئة لتزييف سلسلة المحادثات. بحيث لا يُطلب من مستخدمي هذه الوحدة تسجيل سلسلة المحادثات الخاصة بهم.الحدث ()
     """
 
     @staticmethod
     def isSet():
-        "Dummy method to always return false"""
+        "طريقة وهمية لإرجاع كاذبة دائمًا"""
         return False
 
     is_set = isSet
@@ -162,8 +161,7 @@ except ImportError:
     from io import TextIOWrapper, FileIO
 
     class _Py3Utf8Output(TextIOWrapper):
-        """UTF-8 encoded wrapper around stdout for py3, to override
-        ASCII stdout
+        """غلاف مشفر UTF-8 حول stdout لـ py3، لتجاوز ASCII stdout 
         """
         def __init__(self, f, **kwargs):
             buf = FileIO(f.fileno(), 'w')
@@ -188,11 +186,11 @@ except ImportError:
         _py3_utf8_stderr = sys.stderr
 
     def to_utf8(v):
-        """No-op encode to utf-8 for py3"""
+        """تشفير No-op إلى utf-8 لـ py3 """
         return v
 
     def print_(*args, **kwargs):
-        """Wrapper function for py3 to print, with a utf-8 encoded stdout"""
+        """وظيفة التغليف لطباعة py3، باستخدام stdout المشفر بـ utf-8" ""
         if kwargs.get('file') == sys.stderr:
             kwargs['file'] = _py3_utf8_stderr
         else:
@@ -202,14 +200,14 @@ else:
     del __builtin__
 
     def to_utf8(v):
-        """Encode value to utf-8 if possible for py2"""
+        """قم بتشفير القيمة إلى utf-8 إن أمكن لـ py2"""
         try:
             return v.encode('utf8', 'strict')
         except AttributeError:
             return v
 
     def print_(*args, **kwargs):
-        """The new-style print function for Python 2.4 and 2.5.
+        """وظيفة الطباعة ذات النمط الجديد لـ Python 2.4 و2.5. 
 
         Taken from https://pypi.python.org/pypi/six/
 
@@ -304,7 +302,7 @@ def event_is_set(event):
 
 
 class SpeedtestException(Exception):
-    """Base exception for this module"""
+    """الاستثناء الأساسي لهذه الوحدة """
 
 
 class SpeedtestCLIError(SpeedtestException):
