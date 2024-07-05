@@ -5,18 +5,18 @@ global.ytname = "@fenix_programmer"
 global.socialm = "GitHub: BotDevilLozan"
 global.location = "srilanka, colombo, whaththla"
 global.botname = 'Godfather'
-global.ownernumber = '94773010580'
-global.ownername = 'Fenix id'
-global.websitex = "https://youtube.com/@fenix_programmer?si=wiTuE9uPy9rCRciq"
-global.wagc = "https://whatsapp.com/channel/0029VaV2xYy72WTw8ERfJE2w"
-global.themeemoji = '🪀'
-global.wm = "Godfather By Fenix Id."
-global.botscript = 'https://github.com/Fenixid-server/Mr.-Robot' 
-global.packname = "Itz"
-global.author = "Godfather"
-global.creator = "94773010580@s.whatsapp.net"
+global.ownernumber = '201028085788'
+global.ownername = '𝐸𝐿𝐴𝐾𝑅𝐴𝐵 𝐸𝐿𝑌𝛩𝑇𝑈𝐵𝐸𝑅'
+global.websitex = "https://www.youtube.com/@Elakrab"
+global.wagc = "https://whatsapp.com/channel/0029VahbMZl4tRrkdpJrCv2f"
+global.themeemoji = '🐍'
+global.wm = "˛ َِ𝗘َِ𝗟َِ𝗔َِ𝗞َِ𝗥َِ𝗔َِ𝗕 َِ𝗘َِ𝗟َِ𝗬َِ𝗢َِ𝗧َِ𝗨َِ𝗕َِ𝗘َِ𝗥 ."
+global.botscript = 'https://atom.bio/elakrabelyotyobr' 
+global.packname = "ELAKRAB"
+global.author = "ELAKRAB"
+global.creator = "201028085788@s.whatsapp.net"
 global.xprefix = '.'
-global.premium = ["94773010580"]
+global.premium = ["201028085788"]
 global.hituet = 0
 global.typemenu = 'v12'
 global.typereply = 'v4' 
@@ -27,11 +27,11 @@ global.anticall = true
 global.autoswview = true 
 global.groupevent = false 
 global.mess = {
-	limit: 'Your limit is up!',
-	nsfw: 'Nsfw is disabled in this group, Please tell the admin to enable',
-    done: 'Done and magister',
+	limit: 'الحد الخاص بك يصل!',
+	nsfw: 'تم تعطيل في هذه المجموعة، يرجى إخبار المسؤول للتمكين',
+    done: 'تم ي حب',
     error: 'Error!',
-    success: '*Your Succeed!*'
+    success: '*نجاحك!*'
 }
 
 global.thumb = fs.readFileSync('./FeniXox/theme/Godfatherzpic.jpg')
