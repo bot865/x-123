@@ -12,14 +12,14 @@ function start() {
       })
       .on('message', data => {
          if (data == 'reset') {
-            console.log('Restarting Bot...')
+            console.log('إعادة تشغيل البوت...')
             p.kill()
             start()
             delete p
          }
       })
       .on('exit', code => {
-         console.error('Exited with code:', code)
+         console.error('تم الخروج بالكود:', code)
          if (code == '.' || code == 1 || code == 0) start()
       })
 }
